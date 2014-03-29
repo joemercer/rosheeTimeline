@@ -5,5 +5,47 @@
     "endDate": "Sun Dec 09 02:36:45 EST 2012",
     "deal": "Socks",
     "type": "WARNING"
+  },
+  {
+    "id": 0,
+    "startDate": "Sun Dec 10 01:36:45 EST 2012",
+    "endDate": "Sun Dec 10 02:36:45 EST 2012",
+    "deal": "Shoes",
+    "type": "SUCCEEDED"
+  },
+  {
+    "id": 0,
+    "startDate": "Sun Dec 10 01:36:45 EST 2012",
+    "endDate": "Sun Dec 10 02:36:45 EST 2012",
+    "deal": "Socks",
+    "type": "WARNING"
+  },
+  {
+    "id": 0,
+    "startDate": "Sun Dec 11 01:36:45 EST 2012",
+    "endDate": "Sun Dec 11 02:36:45 EST 2012",
+    "deal": "Shoes",
+    "type": "SUCCEEDED"
+  },
+  {
+    "id": 0,
+    "startDate": "Sun Dec 12 01:36:45 EST 2012",
+    "endDate": "Sun Dec 12 02:36:45 EST 2012",
+    "deal": "Shoes",
+    "type": "WARNING"
+  },
+  {
+    "id": 0,
+    "startDate": "Sun Dec 12 01:36:45 EST 2012",
+    "endDate": "Sun Dec 12 02:36:45 EST 2012",
+    "deal": "Shoes",
+    "type": "SUCCEEDED"
+  },
+  {
+    "id": 0,
+    "startDate": "Sun Dec 12 01:36:45 EST 2012",
+    "endDate": "Sun Dec 12 02:36:45 EST 2012",
+    "deal": "Socks",
+    "type": "SUCCEEDED"
   }
 ]

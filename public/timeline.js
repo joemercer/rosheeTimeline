@@ -1,14 +1,9 @@
 $(function() {
 
-  // Define domElement and sourceFile
-  var domElement = "#timeline";
-  var sourceFile = "philosophers.csv";
-
-
-
   $.getJSON('data.json', function(data) {
 
     var tasks = [];
+    var taskNames = [];
     data.forEach(function(item){
 
       tasks.push({
@@ -18,16 +13,18 @@ $(function() {
         status: item.type
       });
 
+      if (taskNames.indexOf(item.deal) === -1) {
+        taskNames.push(item.deal);
+      }
+
     });
 
     var taskStatus = {
         "SUCCEEDED" : "bar",
-        "FAILED" : "bar-failed",
+        "WARNING" : "bar-failed",
         "RUNNING" : "bar-running",
-        "WARNING" : "bar-killed"
+        "KILLED" : "bar-killed"
     };
-
-    var taskNames = [ "Socks", "P Job", "E Job", "A Job", "N Job" ];
 
     tasks.sort(function(a, b) {
         return a.endDate - b.endDate;
@@ -38,7 +35,7 @@ $(function() {
     });
     var minDate = tasks[0].startDate;
 
-    var format = "%H:%M";
+    var format = "%m-%d";
 
     var gantt = d3.gantt().taskTypes(taskNames).taskStatus(taskStatus).tickFormat(format);
     //gantt.timeDomain([new Date("Sun Dec 09 04:54:19 EST 2012"),new Date("Sun Jan 09 04:54:19 EST 2013")]);
